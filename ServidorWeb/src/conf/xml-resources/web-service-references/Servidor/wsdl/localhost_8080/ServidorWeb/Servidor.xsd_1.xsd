@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://Server/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Server/">
+
+<xs:element name="Comprar" type="tns:Comprar" />
+
+<xs:element name="ComprarResponse" type="tns:ComprarResponse" />
+
+<xs:element name="Verifica" type="tns:Verifica" />
+
+<xs:element name="VerificaResponse" type="tns:VerificaResponse" />
+
+<xs:complexType name="Comprar">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ComprarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Verifica">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VerificaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

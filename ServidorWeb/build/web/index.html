@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Site de Compras</title>
+    </head>
+    <body>
+
+        <h1 style="text-align: center;">BEM VINDO AO SITE DE COMPRAS</h1>
+        <p style="text-align: center;">O que você deseja comprar?
+            <select name="frutas">
+                <option selected>Banana
+                <option>Bergamota
+                <option>Maçã
+                <option>Uva
+                <option>Morango
+            </select>
+        </p>
+        <br>
+        <form style="text-align: center;" id="form1" action="CompraServlet" method="post">
+            <input type="hidden" id="acao" value="compra" name="acao"/>
+
+            <button  onclick="">Comprar</button>
+        </form>
+        <br></br>
+        <form  style="text-align: center;" id="forms" action="CompraServlet" method="post" >
+            <input type="text" id="textform" name="textform" placeholder="Digite o numero do pedido"/>
+            <input type="hidden" id="acao" value="verifica" name="acao"/>
+
+            <button onclick="">Verificar</button>
+        </form>
+    </body>
+</html>
